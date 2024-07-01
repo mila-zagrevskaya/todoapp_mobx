@@ -1,0 +1,99 @@
+.wrapper {
+  max-width: 1080px;
+  margin: 30px auto;
+  padding: 30px 45px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  .add-new-task {
+    margin: 0 auto;
+  }
+}
+.input {
+  min-width: 350px;
+  padding: 10px 15px;
+  border: 1px solid #358a86;
+  border-radius: 3px;
+  font-size: 1.1em;
+}
+.add-task-button {
+  text-transform: uppercase;
+  min-width: 95px;
+  padding: 11px 10px;
+  background-color: #fff;
+  border: 1px solid #358a86;
+  border-radius: 3px;
+  margin-right: 50px;
+  &:hover {
+    background-color: #358a86;
+    color: #fff;
+  }
+}
+.tasks {
+  width: 100%;
+  margin-top: 35px;
+  .tasks-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    margin: 0 0px;
+    padding: 0px 5px 5px 0;
+    .task-list-items {
+      position: relative;
+      margin: 0 10px 15px 0;
+      padding: 10px 45px 10px 15px;
+      list-style: none;
+      width: 250px;
+      border: 1px solid #358a86;
+      background-color: #ffffff90;
+      .icon-bin,
+      .icon-pencil,
+      .icon-checkmark1 {
+        position: absolute;
+        padding: 10px;
+        top: 0px;
+        bottom: 0;
+        right: 5px;
+        &:hover {
+          color: #790e0e;
+          cursor: pointer;
+        }
+      }
+      .icon-pencil {
+        right: 35px;
+        &:hover {
+          color: #358a86;
+        }
+      }
+      .icon-checkmark1 {
+        right: 5px;
+        &:hover {
+          color: #358a86;
+        }
+      }
+    }
+  }
+}
+.edit-field {
+  background-color: #ffffff10;
+  border: none;
+  resize: none;
+  font-weight: bold;
+  width: 100%;
+  overflow: hidden;
+  &:focus {
+    outline: none;
+  }
+}
+
+.counter {
+  margin: 30px auto;
+  h2 {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #fff;
+  }
+}
